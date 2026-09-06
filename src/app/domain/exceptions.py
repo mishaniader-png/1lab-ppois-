@@ -1,0 +1,2 @@
+class ZeroVectorError(ValueError):
+    pass
