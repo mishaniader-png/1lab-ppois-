@@ -164,3 +164,4 @@ class SetBase(BaseSet):
         return "{" + ", ".join(
             str(element) for element in self.elements
         ) + "}"
+

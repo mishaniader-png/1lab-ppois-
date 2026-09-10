@@ -65,3 +65,7 @@ class BaseSet(ABC):
     def __str__(self) -> str:
         pass
 
+    @abstractmethod
+    def show(self) -> None:
+        pass
+
