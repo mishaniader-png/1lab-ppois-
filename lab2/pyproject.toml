@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banking-domain"
+version = "0.1.0"
+description = "Banking domain model for PPOIS laboratory work"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["banking"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+
+[tool.setuptools.packages.find]
+include = ["banking*"]
